@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="173.0" prefWidth="456.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hcmrecorder.FXMLDocumentController">
+    <children>
+       
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="29.0" layoutY="78.0" onAction="#handleRecordButton" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: #2ecc71;" text="Record ">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="PLAY" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="171.0" layoutY="78.0" onAction="#handleStopButton" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: #e74c3c;" text="Stop">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="STOP" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="305.0" layoutY="78.0" onAction="#handlePauseButton" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: #f1c40f;" text="Pasuse ">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="PAUSE" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXTextField fx:id="recordname" layoutX="29.0" layoutY="25.0" prefHeight="25.0" prefWidth="391.0" promptText="Record Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="label" disable="true" layoutX="22.0" layoutY="137.0" prefHeight="17.0" prefWidth="137.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
